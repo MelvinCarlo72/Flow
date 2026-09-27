@@ -1,0 +1,15 @@
+{
+  "name": "task-manager-app",
+  "version": "1.0.0",
+  "description": "Full-stack task manager with accounts-free CRUD task lists and due-date tracking.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "author": "Melvin Carlo Villanueva",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

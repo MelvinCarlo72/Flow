@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Task Manager</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <h1>Task Manager</h1>
+  <p class="sub">Add tasks, set due dates, check them off.</p>
+
+  <form id="taskForm" class="task-form">
+    <input type="text" id="titleInput" placeholder="What needs doing?" required />
+    <input type="date" id="dueInput" />
+    <button type="submit">Add task</button>
+  </form>
+
+  <div class="filters">
+    <button data-filter="all" class="filter active">All</button>
+    <button data-filter="active" class="filter">Active</button>
+    <button data-filter="completed" class="filter">Completed</button>
+  </div>
+
+  <ul id="taskList" class="task-list"></ul>
+  <p id="emptyState" class="empty hidden">No tasks yet — add one above.</p>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
